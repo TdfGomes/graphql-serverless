@@ -4,8 +4,9 @@
   "description": "Serverless GraphQl API",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --watch && pm2 logs",
-    "stop": "pm2 stop all"
+    "start": "pm2 start index.js --watch --time && pm2 logs",
+    "stop": "pm2 stop all",
+    "start:stg": "node index.js"
   },
   "keywords": [
     "graphql",
