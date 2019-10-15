@@ -1,0 +1,28 @@
+{
+  "name": "graphql-serverless",
+  "version": "1.0.0",
+  "description": "Serverless GraphQl API",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start index.js --watch && pm2 logs",
+    "stop": "pm2 stop all"
+  },
+  "keywords": [
+    "graphql",
+    "serverless",
+    "node",
+    "koa"
+  ],
+  "author": "Tiago Gomes",
+  "license": "ISC",
+  "dependencies": {
+    "graphql": "^14.5.8",
+    "koa": "^2.10.0",
+    "koa-graphql": "^0.8.0",
+    "koa-mount": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "pm2": "^4.1.1"
+  }
+}
